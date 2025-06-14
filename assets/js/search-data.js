@@ -64,16 +64,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-our-ra-l-paper-entitled-heterogeneous-risk-management-using-a-multi-agent-framework-for-supply-chain-disruption-response-was-presented-in-ieee-international-conference-on-automation-science-and-engineering-case-at-bari-italy",
+          title: 'Our RA-L paper entitled Heterogeneous Risk Management Using a Multi-Agent Framework for Supply...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-our-paper-entitled-adasociety-an-adaptive-environment-with-social-structures-for-multi-agent-decision-making-was-accepted-by-conference-and-workshop-on-neural-information-processing-systems-neurips-d-amp-amp-b-track",
+          title: 'Our paper entitled AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-our-paper-entitled-a-lead-time-aware-decomposition-approach-to-optimize-disruption-response-in-supply-chains-was-accepted-by-ieee-transactions-on-automation-science-and-engineering-t-ase",
+          title: 'Our paper entitled A Lead-Time-Aware Decomposition Approach to Optimize Disruption Response in Supply...',
+          description: "",
+          section: "News",},{id: "news-our-paper-entitled-digital-twin-based-smart-manufacturing-dynamic-line-reconfiguration-for-disturbance-handling-was-accepted-by-ieee-transactions-on-automation-science-and-engineering-t-ase",
+          title: 'Our paper entitled Digital Twin-based Smart Manufacturing: Dynamic Line Reconfiguration for Disturbance Handling...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
