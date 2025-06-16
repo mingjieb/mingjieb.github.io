@@ -44,7 +44,62 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "books-the-godfather",
+        },{id: "post-ieee-case-2024",
+        
+          title: "IEEE CASE 2024",
+        
+        description: "Heterogeneous Risk Management Using a Multi-Agent Framework for Supply Chain Disruption Response",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/presentations/2024/case2024/";
+          
+        },
+      },{id: "post-job-talk",
+        
+          title: "Job Talk",
+        
+        description: "Distributed Decision-Making Using Multi-Agent Framework in Complex Systems",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/presentations/2023/jobtalk/";
+          
+        },
+      },{id: "post-ph-d-defense",
+        
+          title: "Ph.D. Defense",
+        
+        description: "this is what included images could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/presentations/2023/defense/";
+          
+        },
+      },{id: "post-2023-midwest-workshop-on-control-and-game-theory",
+        
+          title: "2023 Midwest Workshop on Control and Game Theory",
+        
+        description: "this is what included images could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/presentations/2023/mwcgt/";
+          
+        },
+      },{id: "post-ieee-case-2022",
+        
+          title: "IEEE CASE 2022",
+        
+        description: "A model-based multi-agent framework to enable an agile response to supply chain disruptions",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/presentations/2022/case2022/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
