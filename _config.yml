@@ -243,7 +243,7 @@ jekyll-archives:
     enabled: [tags, location] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
       tags: /presentations/tags/:name/ # permalink for tag archives
-      location: /presentations/location/:name/ # permalink for location archives
+      categories: /presentations/categories/:name/ # permalink for location archives
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
