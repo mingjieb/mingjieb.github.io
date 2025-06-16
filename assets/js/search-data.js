@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
+        },{id: "nav-presentations",
+          title: "Presentations",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
         },{id: "nav-curriculum-vitae",
           title: "Curriculum Vitae",
           description: "",
@@ -63,7 +70,7 @@ ninja.data = [{
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather.html";
+              window.location.href = "/books/the_godfather/";
             },},{id: "news-our-ra-l-paper-entitled-heterogeneous-risk-management-using-a-multi-agent-framework-for-supply-chain-disruption-response-was-presented-in-ieee-international-conference-on-automation-science-and-engineering-case-at-bari-italy",
           title: 'Our RA-L paper entitled Heterogeneous Risk Management Using a Multi-Agent Framework for Supply...',
           description: "",
@@ -80,47 +87,47 @@ ninja.data = [{
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project.html";
+              window.location.href = "/projects/3_project/";
             },},{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project.html";
+              window.location.href = "/projects/5_project/";
             },},{id: "projects-project-6",
           title: 'project 6',
           description: "a project with no image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project.html";
+              window.location.href = "/projects/6_project/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project.html";
+              window.location.href = "/projects/9_project/";
             },},{id: "projects-adasociety",
           title: 'AdaSociety',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/AdaSociety.html";
+              window.location.href = "/projects/AdaSociety/";
             },},{id: "projects-large-social-simulator",
           title: 'Large Social Simulator',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/LSS.html";
+              window.location.href = "/projects/LSS/";
             },},{id: "projects-mams",
           title: 'MAMS',
           description: "another without an image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/MAMS.html";
+              window.location.href = "/projects/MAMS/";
             },},{id: "projects-mbia",
           title: 'MBIA',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/MBIA.html";
+              window.location.href = "/projects/MBIA/";
             },},{id: "projects-morality",
           title: 'Morality',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/Morality.html";
+              window.location.href = "/projects/Morality/";
             },},{
         id: 'social-email',
         title: 'email',
