@@ -1,9 +1,41 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"NeurIPS1":
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"Vision1":
+  color: "#009f36"
+
+"NeurIPS":
+  color: "#3B5BA9"
 
 "Vision":
-  color: "#009f36"
+  color: "#009F6B"
+
+"IJMS":
+  color: "#2D8C99"
+
+"MECC":
+  color: "#A97B3B"
+
+"IEEE Access":
+  color: "#1A6F96"
+
+"CASE":
+  color: "#A93B5B"
+
+"IJPR":
+  color: "#5B3BA9"
+
+"IEEE T-ASE":
+  color: "#3BA97B"
+
+"IEEE RA-L":
+  color: "#A93B8C"
+
+"Ph.D. Thesis":
+  color: "#6B6B6B"
+
+"Ann. Phys.":
+  color: "#B97A57"
+
+"PhysRev":
+  color: "#4B7BA9"
