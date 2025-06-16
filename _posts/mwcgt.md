@@ -1,11 +1,12 @@
 ---
 layout: post
-title: a post with images
-date: 2015-05-15 21:01:00
+title: 2023 Midwest Workshop on Control and Game Theory
+date: 2023-04-23 21:01:00
 description: this is what included images could look like
-tags: formatting images
+tags: workshop
 categories: sample-posts
 thumbnail: assets/img/9.jpg
+location: Minneapolis, MN, USA
 ---
 
 This is an example post with image galleries.
