@@ -81,22 +81,22 @@ openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX
 google_site_verification: # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
-# # -----------------------------------------------------------------------------
-# # Blog
-# # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
 
-# blog_name: al-folio # blog_name will be displayed in your blog page
-# blog_description: a simple whitespace theme for academics
-# permalink: /blog/:year/:title/
-# lsi: false # produce an index for related posts
+blog_name: # blog_name will be displayed in your blog page
+blog_description: Presentations, talks, and posters at conferences, workshops, and other events. # blog_description will be displayed in your blog page
+permalink: /blog/:year/:title/
+lsi: false # produce an index for related posts
 
-# # Pagination
-# pagination:
-#   enabled: true
+# Pagination
+pagination:
+  enabled: true
 
-# related_blog_posts:
-#   enabled: true
-#   max_related: 5
+related_blog_posts:
+  enabled: true
+  max_related: 5
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
@@ -245,10 +245,13 @@ terser:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
+  posts:
+    enabled: [] # enables year, tag and category archives (remove if you need to disable one of them).
+    permalinks:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
+display_tags: [] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
