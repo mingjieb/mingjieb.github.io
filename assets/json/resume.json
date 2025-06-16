@@ -32,7 +32,7 @@
       "url": "https://www.bigai.ai/",
       "startDate": "2024-02-19",
       "endDate": "",
-      "summary": ""
+      "summary": "Working on multi-agent modeling, interaction, and decision-making in social environments."
     },
     {
       "name": "Hitachi America, Ltd. (HAL)",
@@ -40,14 +40,21 @@
       "url": "https://www.hitachi.us/",
       "startDate": "2023-07-05",
       "endDate": "2023-12-01",
-      "summary": ""
+      "summary": "Working on optimzation in manufacturing line and human bahavior recognition with wearable devices."
     }
   ],
   "awards": [
     {
-      "title": "",
-      "date": "1921-11-01",
-      "awarder": "",
+      "title": "Best Paper Finalist",
+      "date": "2023-08-24",
+      "awarder": "IEEE CASE 2023",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "Best Paper Finalist",
+      "date": "2022-08-27",
+      "awarder": "IEEE CASE 2022",
       "url": "",
       "summary": ""
     }
@@ -76,7 +83,7 @@
   "interests": [
     {
       "name": "Basketball",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-basketball",
       "keywords": [
       ]
     }
