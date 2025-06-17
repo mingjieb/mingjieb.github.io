@@ -45,16 +45,65 @@
   ],
   "awards": [
     {
-      "title": "Best Paper Finalist",
+      "title": "Best Conference Award Finalist",
       "date": "2023-08-24",
       "awarder": "IEEE CASE 2023",
       "url": "",
       "summary": ""
     },
     {
-      "title": "Best Paper Finalist",
+      "title": "Best Conference & Application Award Finalist",
       "date": "2022-08-27",
       "awarder": "IEEE CASE 2022",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "Rackham Conference Travel Grant",
+      "date": "2022-08-27",
+      "awarder": "University of Michigan",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "Outstanding Graduates",
+      "date": "2018-05-20",
+      "awarder": "Huazhong University of Science and Technology",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "National Scholarship",
+      "date": "2017-11-30",
+      "awarder": "Ministry of Education of the People's Republic of China",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "Best Application and Creativity Award",
+      "date": "2017-08-20",
+      "awarder": "National Marine Vehicle Design and Production Contest",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "First Prize in Hubei Province",
+      "date": "2017-08-20",
+      "awarder": "Challenge Cup National Undergraduate Curricular Academic Science and Technology Works Competition",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "National Second Prize",
+      "date": "2017-08-30",
+      "awarder": "Challenge Cup National Undergraduate Curricular Academic Science and Technology Works Competition",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "title": "National Scholarship",
+      "date": "2016-11-30",
+      "awarder": "Ministry of Education of the People's Republic of China",
       "url": "",
       "summary": ""
     }
@@ -62,10 +111,28 @@
   "skills": [
     {
       "name": "Artificial Intelligence",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-      ]
+      "icon": "fa-solid fa-brain-circuit",
+      "keywords": ["Deep Learning", "Multi-agent Reinforcement Learning", "Large Language Model", "Game theory"]
+    },
+    {
+      "name": "Robotics",
+      "icon": "fa-solid fa-robot",
+      "keywords": ["Control Theory", "Motion/Path Planning", "Manipulation", "Kinematics & Dynamics"]
+    },
+    {
+      "name": "Smart Manufacturing and Supply Chain",
+      "icon": "fa-solid fa-conveyor-belt-arm",
+      "keywords": ["Scheduling and Planning", "Operations Research", "Risk Management", "Stochastic Programming"]
+    },
+    {
+      "name": "Programming Languages",
+      "icon": "fa-solid fa-keyboard",
+      "keywords": ["Python", "Java", "MATLAB/Simulink", "SQL", "C/C++"]
+    },
+    {
+      "name": "Software and Tools",
+      "icon": "fa-solid fa-computer",
+      "keywords": ["PyTorch", "RepastSimphony", "ROS", "Gurobi", "Git", "SolidWorks", "AutoCAD"]
     }
   ],
   "languages": [
@@ -84,8 +151,17 @@
     {
       "name": "Basketball",
       "icon": "fa-solid fa-basketball",
-      "keywords": [
-      ]
+      "keywords": []
+    },
+    {
+      "name": "Traveling",
+      "icon": "fa-solid fa-plane",
+      "keywords": []
+    },
+    {
+      "name": "History",
+      "icon": "fa-solid fa-clock-rotate-left",
+      "keywords": []
     }
   ]
 }
