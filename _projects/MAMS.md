@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MAMS
-description: another without an image
+description: Software Defined Control for Smart Manufacturing Systems
 img:
 importance: 3
 category: work

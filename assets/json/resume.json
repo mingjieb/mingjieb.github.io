@@ -81,21 +81,21 @@
     },
     {
       "title": "Best Application and Creativity Award",
-      "date": "2017-08-20",
+      "date": "2017-08-17",
       "awarder": "National Marine Vehicle Design and Production Contest",
       "url": "",
       "summary": ""
     },
     {
       "title": "First Prize in Hubei Province",
-      "date": "2017-08-20",
+      "date": "2017-06-10",
       "awarder": "Challenge Cup National Undergraduate Curricular Academic Science and Technology Works Competition",
       "url": "",
       "summary": ""
     },
     {
       "title": "National Second Prize",
-      "date": "2017-08-30",
+      "date": "2017-11-18",
       "awarder": "Challenge Cup National Undergraduate Curricular Academic Science and Technology Works Competition",
       "url": "",
       "summary": ""
@@ -111,7 +111,7 @@
   "skills": [
     {
       "name": "Artificial Intelligence",
-      "icon": "fa-solid fa-brain-circuit",
+      "icon": "fa-solid fa-brain",
       "keywords": ["Deep Learning", "Multi-agent Reinforcement Learning", "Large Language Model", "Game theory"]
     },
     {
@@ -121,7 +121,7 @@
     },
     {
       "name": "Smart Manufacturing and Supply Chain",
-      "icon": "fa-solid fa-conveyor-belt-arm",
+      "icon": "fa-solid fa-industry",
       "keywords": ["Scheduling and Planning", "Operations Research", "Risk Management", "Stochastic Programming"]
     },
     {
@@ -160,7 +160,7 @@
     },
     {
       "name": "History",
-      "icon": "fa-solid fa-clock-rotate-left",
+      "icon": "fa-solid fa-timeline",
       "keywords": []
     }
   ]

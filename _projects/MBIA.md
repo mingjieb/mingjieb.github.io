@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MBIA
-description: an other project with a background image and giscus comments
+description: A Model-Based Intelligent Agent Approach for Supply Chain Transparency and Resilience
 img: assets/img/9.jpg
 importance: 2
 category: work
