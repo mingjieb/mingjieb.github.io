@@ -2,7 +2,7 @@
 layout: page
 title: AdaSociety
 description: with background image
-img: assets/img/4.jpg
+img: assets/img/AdaSociety.gif
 importance: 1
 category: work
 related_publications: true

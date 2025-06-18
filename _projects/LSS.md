@@ -2,7 +2,7 @@
 layout: page
 title: Large Social Simulator
 description: with background image
-img: assets/img/12.jpg
+img: assets/img/LSS.gif
 importance: 1
 category: work
 related_publications: true
