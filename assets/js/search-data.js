@@ -148,12 +148,12 @@ ninja.data = [{
               window.location.href = "/projects/LSS/";
             },},{id: "projects-mams",
           title: 'MAMS',
-          description: "another without an image",
+          description: "Software Defined Control for Smart Manufacturing Systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/MAMS/";
             },},{id: "projects-mbia",
           title: 'MBIA',
-          description: "an other project with a background image and giscus comments",
+          description: "A Model-Based Intelligent Agent Approach for Supply Chain Transparency and Resilience",
           section: "Projects",handler: () => {
               window.location.href = "/projects/MBIA/";
             },},{id: "projects-morality",
