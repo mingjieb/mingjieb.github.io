@@ -49,7 +49,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/test/";
           },
         },{id: "post-ieee-case-2024",
         
