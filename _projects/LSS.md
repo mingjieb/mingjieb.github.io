@@ -4,7 +4,7 @@ title: Large Social Simulator
 description: with background image
 img: assets/img/LSS.gif
 importance: 1
-category: work
+category: Social Simulation
 related_publications: true
 ---
 

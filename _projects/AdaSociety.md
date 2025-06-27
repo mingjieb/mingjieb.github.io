@@ -4,7 +4,7 @@ title: AdaSociety
 description: with background image
 img: assets/img/AdaSociety.gif
 importance: 1
-category: work
+category: Social Simulation
 related_publications: true
 ---
 

@@ -3,41 +3,62 @@ layout: page
 title: test
 permalink: /test/
 description: 
-nav: true
-nav_order: 6
+nav: false
+nav_order: 
 ---
 
-<div class="diagram-projects-fixed">
-  <!-- Central Block -->
-  <div class="diagram-block center-block-fixed">Main Project</div>
+<div class="diagram-projects-fixed" style="position:relative; width:100%; max-width:900px; height:700px; margin:0 auto;">
 
-  <!-- Connectors -->
-  <svg class="diagram-connectors-fixed" width="100%" height="180">
-    <line x1="50%" y1="80" x2="25%" y2="160" stroke="var(--global-theme-color)" stroke-width="2"/>
-    <line x1="50%" y1="80" x2="50%" y2="160" stroke="var(--global-theme-color)" stroke-width="2"/>
-    <line x1="50%" y1="80" x2="75%" y2="160" stroke="var(--global-theme-color)" stroke-width="2"/>
+  <!-- SVG Connectors -->
+  <svg class="diagram-connectors-fixed" width="100%" height="650" style="position:absolute; left:0; top:0; z-index:1;">
+    <!-- Top connections -->
+    <line x1="16.6%" y1="140" x2="50%" y2="230" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <line x1="50%" y1="140" x2="50%" y2="230" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <line x1="83.3%" y1="140" x2="50%" y2="230" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <!-- Bottom connections -->
+    <line x1="16.6%" y1="320" x2="50%" y2="250" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <line x1="50%" y1="320" x2="50%" y2="250" stroke="var(--global-theme-color)" stroke-width="2"/>
+    <line x1="83.3%" y1="320" x2="50%" y2="250" stroke="var(--global-theme-color)" stroke-width="2"/>
   </svg>
 
-  <!-- Sub Blocks -->
-  <div class="sub-blocks-row">
-    <div class="diagram-block sub-block-fixed">Sub Block 1</div>
-    <div class="diagram-block sub-block-fixed">Sub Block 2</div>
-    <div class="diagram-block sub-block-fixed">Sub Block 3</div>
+  <!-- Top Sub Blocks (no projects) -->
+  <div class="sub-blocks-row" style="position:absolute; top:100px; left:0; width:100%;">
+    <div class="diagram-block sub-block-fixed">Modeling</div>
+    <div class="diagram-block sub-block-fixed">Interactions</div>
+    <div class="diagram-block sub-block-fixed">Decision-Making</div>
   </div>
 
-  <!-- Projects under each sub block -->
-  <div class="project-groups-row">
-    <div class="project-group-fixed">
-      <div class="diagram-project-card">Project 1A</div>
-      <div class="diagram-project-card">Project 1B</div>
+  <!-- Center Block -->
+  <div class="diagram-block center-block-fixed" style="position:absolute; left:50%; top:170px; transform:translateX(-50%);">Multi-Agent Systems</div>
+
+  <!-- Bottom Sub Blocks with Projects -->
+  <div class="sub-blocks-row" style="position:absolute; top:320px; left:0; width:100%;">
+    <div>
+      <div class="diagram-block sub-block-fixed">Social Simulation</div>
+      <div class="project-group-fixed">
+        {% assign projects1 = site.projects | slice: 0, 2 %}
+        {% for project in projects1 %}
+          {% include projects.liquid project=project %}
+        {% endfor %}
+      </div>
     </div>
-    <div class="project-group-fixed">
-      <div class="diagram-project-card">Project 2A</div>
-      <div class="diagram-project-card">Project 2B</div>
+    <div>
+      <div class="diagram-block sub-block-fixed">Industrial Application</div>
+      <div class="project-group-fixed">
+        {% assign projects2 = site.projects | slice: 2, 2 %}
+        {% for project in projects2 %}
+          {% include projects.liquid project=project %}
+        {% endfor %}
+      </div>
     </div>
-    <div class="project-group-fixed">
-      <div class="diagram-project-card">Project 3A</div>
-      <div class="diagram-project-card">Project 3B</div>
+    <div>
+      <div class="diagram-block sub-block-fixed">Robotics</div>
+      <div class="project-group-fixed">
+        {% assign projects3 = site.projects | slice: 4, 2 %}
+        {% for project in projects3 %}
+          {% include projects.liquid project=project %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

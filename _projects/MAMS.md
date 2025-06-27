@@ -4,7 +4,7 @@ title: MAMS
 description: Software Defined Control for Smart Manufacturing Systems
 img:
 importance: 3
-category: work
+category: Industrial Application
 ---
 
 Every project has a beautiful feature showcase page.

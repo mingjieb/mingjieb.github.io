@@ -162,6 +162,11 @@
       "name": "History",
       "icon": "fa-solid fa-timeline",
       "keywords": []
+    },
+    {
+      "name": "Music",
+      "icon": "fa-solid fa-music",
+      "keywords": []
     }
   ]
 }

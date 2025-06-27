@@ -5,9 +5,39 @@ permalink: /projects/
 description: 
 nav: true
 nav_order: 2
-display_categories: [work]
+display_categories: [Social Simulation, Industrial Application, Robotics, Others]
 horizontal: false
 ---
+
+
+
+<div style="display: flex; align-items: flex-start; gap: 2em; margin-bottom: 2em;">
+  <!-- Project Picture -->
+  <div>
+    <img src="/assets/img/projects_overview.jpg" alt="Projects Overview" style="max-width:220px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08);" />
+  </div>
+  <!-- Category Blocks -->
+  <div style="display: flex; flex-direction: column; gap: 1em;">
+    {% for category in page.display_categories %}
+      <a href="#{{ category | slugify }}" style="text-decoration: none;">
+        <div style="
+          background: var(--global-theme-color);
+          color: var(--global-hover-text-color);
+          padding: 1em 2em;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 1.1em;
+          text-align: center;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+          transition: background 0.2s;
+        " onmouseover="this.style.background='var(--global-hover-color)'" onmouseout="this.style.background='var(--global-theme-color)'">
+          {{ category | capitalize }}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
 
 <!-- pages/projects.md -->
 <div class="projects">
