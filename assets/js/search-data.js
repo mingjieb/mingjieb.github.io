@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-presentations",
           title: "Presentations",
           description: "",
@@ -37,19 +30,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/presentations/index.html";
           },
+        },{id: "nav-repositories",
+          title: "Repositories",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
         },{id: "nav-curriculum-vitae",
           title: "Curriculum Vitae",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-test",
-          title: "test",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/test/";
           },
         },{id: "post-ieee-case-2024",
         
