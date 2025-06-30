@@ -11,25 +11,29 @@ horizontal: false
 
 
 
-<div style="display: flex; align-items: flex-start; gap: 2em; margin-bottom: 2em;">
+<div style="display: flex; align-items: stretch; gap: 2em; margin-bottom: 2em;">
   <!-- Project Picture -->
-  <div>
-    <img src="/assets/img/projects_overview.jpg" alt="Projects Overview" style="max-width:220px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08);" />
+  <div style="display: flex; align-items: stretch;">
+    <img id="projects-overview-img"
+     src="/assets/img/MAS-light.png"
+     alt="Projects Overview"
+     style="height: 100%; max-height: 260px; object-fit: cover;" />
   </div>
   <!-- Category Blocks -->
-  <div style="display: flex; flex-direction: column; gap: 1em;">
+  <div style="display: flex; flex-direction: column; gap: 0.5em; justify-content: stretch; height: 260px;">
     {% for category in page.display_categories %}
-      <a href="#{{ category | slugify }}" style="text-decoration: none;">
+      <a href="#{{ category | slugify }}" style="text-decoration: none; flex: 1;">
         <div style="
           background: var(--global-theme-color);
           color: var(--global-hover-text-color);
           padding: 1em 2em;
           border-radius: 10px;
           font-weight: 600;
-          font-size: 1.1em;
+          font-size: 1em;
           text-align: center;
           box-shadow: 0 2px 8px rgba(0,0,0,0.06);
           transition: background 0.2s;
+          height: 25%; display: flex; align-items: center; justify-content: center;
         " onmouseover="this.style.background='var(--global-hover-color)'" onmouseout="this.style.background='var(--global-theme-color)'">
           {{ category | capitalize }}
         </div>
@@ -93,3 +97,24 @@ horizontal: false
   {% endif %}
 {% endif %}
 </div>
+
+
+<script>
+(function() {
+  function setProjectImg() {
+    var img = document.getElementById('projects-overview-img');
+    if (!img) return;
+    var theme = document.documentElement.getAttribute('data-theme');
+    if (theme === 'dark') {
+      img.src = '/assets/img/MAS-dark.png';
+    } else {
+      img.src = '/assets/img/MAS-light.png';
+    }
+  }
+  // Initial set
+  setProjectImg();
+  // Listen for theme changes (if your theme toggler sets data-theme on <html>)
+  const observer = new MutationObserver(setProjectImg);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+})();
+</script>

@@ -2,7 +2,7 @@
 layout: page
 title: MBIA
 description: A Model-Based Intelligent Agent Approach for Supply Chain Transparency and Resilience
-img: assets/img/9.jpg
+img: assets/img/MBIA.gif
 importance: 2
 category: Industrial Application
 giscus_comments: true
