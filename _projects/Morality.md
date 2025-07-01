@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Morality
-description: a project with a background image and giscus comments
+description: An LLM-based agent simulation framework modeling prehistoric hunter-gatherer societies
 img: assets/img/3.jpg
 importance: 1
 category: Social Simulation

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AdaSociety
-description: with background image
+description: A customizable multi-agent environment featuring expanding state and action spaces, alongside explicit and alterable social structures
 img: assets/img/AdaSociety.gif
 importance: 1
 category: Social Simulation
