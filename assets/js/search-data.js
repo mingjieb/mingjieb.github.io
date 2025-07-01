@@ -55,6 +55,17 @@ ninja.data = [{
             window.location.href = "/presentations/2024/case2024/";
           
         },
+      },{id: "post-asian-social-simulation-association-annual-conference",
+        
+          title: "Asian Social Simulation Association Annual Conference",
+        
+        description: "UV-Based Agent Modeling and Learning from Population Data Reconstruction",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/presentations/2024/ASSA/";
+          
+        },
       },{id: "post-job-talk",
         
           title: "Job Talk",
@@ -121,16 +132,6 @@ ninja.data = [{
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
@@ -138,12 +139,12 @@ ninja.data = [{
               window.location.href = "/projects/9_project/";
             },},{id: "projects-adasociety",
           title: 'AdaSociety',
-          description: "with background image",
+          description: "A customizable multi-agent environment featuring expanding state and action spaces, alongside explicit and alterable social structures",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AdaSociety/";
             },},{id: "projects-large-social-simulator",
           title: 'Large Social Simulator',
-          description: "with background image",
+          description: "Human behavior simulation in real-world digital environment",
           section: "Projects",handler: () => {
               window.location.href = "/projects/LSS/";
             },},{id: "projects-mams",
@@ -158,9 +159,19 @@ ninja.data = [{
               window.location.href = "/projects/MBIA/";
             },},{id: "projects-morality",
           title: 'Morality',
-          description: "a project with a background image and giscus comments",
+          description: "An LLM-based agent simulation framework modeling prehistoric hunter-gatherer societies",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Morality/";
+            },},{id: "projects-robot-kinematics-and-dynamics",
+          title: 'Robot Kinematics and Dynamics',
+          description: "Computational foundations of autonomous robotics for programming modern mobile manipulation systems",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ROB510/";
+            },},{id: "projects-robotic-systems-laboratory",
+          title: 'Robotic Systems Laboratory',
+          description: "Multidisciplinary laboratory course with exposures to sensing, reasoning, and acting for physically-embodied systems",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ROB550/";
             },},{
         id: 'social-email',
         title: 'email',
