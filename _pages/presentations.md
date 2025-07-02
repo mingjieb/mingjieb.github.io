@@ -8,7 +8,7 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 8
   sort_field: date
   sort_reverse: true
   trail:
@@ -179,9 +179,12 @@ pagination:
 
 </div>
 
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
+  <div class="col-sm-3" style="background: var(--global-bg-color); display: flex; align-items: center; justify-content: center;">
+  <img class="card-img"
+       src="{{ post.thumbnail | relative_url }}"
+       style="object-fit: contain; width: 100%; height: 90%; background: var(--global-bg-color); border-radius: 8px;"
+       alt="image">
+</div>
 </div>
 {% endif %}
     </li>

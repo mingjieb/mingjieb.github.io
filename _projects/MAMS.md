@@ -2,7 +2,7 @@
 layout: page
 title: MAMS
 description: Software Defined Control for Smart Manufacturing Systems
-img:
+img: assets/img/MAMS.gif
 importance: 3
 category: Industrial Application
 ---
