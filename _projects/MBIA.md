@@ -6,20 +6,29 @@ img: assets/img/MBIA.gif
 importance: 2
 category: Industrial Application
 giscus_comments: true
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Overview:**
+This project proposes a distributed multi-agent framework to support agile decision-making in disrupted supply chains. By leveraging local agent intelligence, network structure awareness, and dynamic communication protocols, the framework enables fast and effective responses to supplier loss and other disruptions, without requiring full network re-optimization.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Agent Modeling:**
+Each agent in the supply chain (suppliers, manufacturers, transporters, etc.) is modeled with a belief-desire-intention (BDI) architecture. Agents possess knowledge of their own capabilities, production states, and surrounding network context. This model-based design enables flexible behavior adaptation in the face of disruption. 
+<!-- {% cite bi2023distributed%} {% cite bi2022model%} {% cite bi2024heterogeneous%} -->
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**Agent Interaction:**
+Agents interact through structured communication protocols inspired by the Contract Net Protocol. Communication involves iterative information exchange for supplier selection, flow reallocation, and demand propagation. This design supports local collaboration and global coordination without centralized control.
+
+**Agent Decision-Making:**
+Each agent independently identifies disruptions, updates its local state, and solves constrained optimization problems to fulfill new product demands. Decision-making processes include disruption detection, supplier selection, and response planning, and are guided by agent-level objectives such as cost minimization or capacity balancing.
+
+<!-- {% citeestrada2023multi%} {% citeestrada2025lead%} -->
+
+**Experiment Design:**
+We conduct a comprehensive case study on a vehicle cockpit supply chain with 117 enterprise agents and 413 transport agents. 84 disruption scenarios are simulated, and the distributed approach is compared to a centralized optimization baseline. Performance is evaluated across multiple metrics including overage cost, network changes, communication effort, and feasibility under varying agent attributes (connectivity, complexity, redundancy, depth).
+
+**Impact:**
+This project offers a practical and scalable approach for supply chain disruption management. It highlights the importance of network-aware agent attributes in decision-making performance and provides actionable insights for when to deploy centralized vs. distributed strategies based on disruption type and agent characteristics.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

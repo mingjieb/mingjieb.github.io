@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Robotic Systems Laboratory
-description: Multidisciplinary laboratory course with exposures to sensing, reasoning, and acting for physically-embodied systems
-img: assets/img/balancebot.gif
-importance: 1
+title: Underwater dual manipulators
+description: another project with an image 🎉
+img: assets/img/6.jpg
+importance: 4
 category: Robotics
 ---
 
@@ -22,13 +22,13 @@ To give your project a background in the portfolio page, just add the img tag to
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/balancebot.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
-    <!-- <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/arm.gif" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div> -->
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/bot.gif" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

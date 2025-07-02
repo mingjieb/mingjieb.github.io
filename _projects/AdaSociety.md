@@ -8,18 +8,24 @@ category: Social Simulation
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Project: AdaSociety — Adaptive Multi-Agent Environment with Social Structures
+**Overview:**
+AdaSociety is a novel benchmark environment for evaluating multi-agent decision-making under dynamic social structures. It introduces a population of heterogeneous agents co-evolving in a procedurally generated city with needs, preferences, and resource constraints, enabling the study of complex social behaviors, institutional emergence, and adaptation.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Agent Modeling:**
+Agents are designed with diverse attributes, including consumption needs, labor abilities, and social identities. They possess internal states (e.g., health, inventory, utility) and interact within an environment that includes economic roles (e.g., consumer, worker, robber) and institutions (e.g., tax, punishment). This rich agent modeling supports the emergence of realistic macro-social dynamics from micro-level behaviors.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**Agent Interaction:**
+Agents interact through structured mechanisms such as resource trading, labor matching, and public goods contribution. Social interactions also include cooperative and adversarial dynamics, including robbery and group-based identity formation. These interactions are affected by evolving institutions and group affiliations, allowing the simulation of adaptive social structures.
+
+**Agent Decision-Making:**
+Each agent operates based on local observations, balancing individual needs with social strategies. Decision-making spans basic survival (e.g., acquiring food) to complex political or institutional behaviors (e.g., voting, rule enforcement). Reinforcement learning is used to train policies that adapt to changing social and economic conditions.
+
+**Experiment Design:**
+The environment supports a wide range of experiments across over 30 tasks, including institutional evaluation, inter-group conflict, and long-term planning. Comprehensive metrics are introduced to assess social inequality, resource allocation efficiency, cooperation, and emergent group dynamics. The framework allows benchmarking multi-agent RL algorithms in adaptive and socially grounded settings.
+
+**Impact:**
+AdaSociety fills a critical gap in existing benchmarks by integrating agent heterogeneity, institutional dynamics, and long-horizon adaptation. It serves as a testbed for advancing socially aware AI, multi-agent reinforcement learning, and computational social science.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
