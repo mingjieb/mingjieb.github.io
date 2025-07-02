@@ -81,7 +81,7 @@ ninja.data = [{
         
           title: "Ph.D. Defense",
         
-        description: "this is what included images could look like",
+        description: "Ph.D. defense",
         section: "Posts",
         handler: () => {
           
