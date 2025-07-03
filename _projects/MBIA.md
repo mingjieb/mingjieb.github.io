@@ -13,16 +13,13 @@ related_publications: true
 This project proposes a distributed multi-agent framework to support agile decision-making in disrupted supply chains. By leveraging local agent intelligence, network structure awareness, and dynamic communication protocols, the framework enables fast and effective responses to supplier loss and other disruptions, without requiring full network re-optimization.
 
 **Agent Modeling:**
-Each agent in the supply chain (suppliers, manufacturers, transporters, etc.) is modeled with a belief-desire-intention (BDI) architecture. Agents possess knowledge of their own capabilities, production states, and surrounding network context. This model-based design enables flexible behavior adaptation in the face of disruption. 
-<!-- {% cite bi2023distributed%} {% cite bi2022model%} {% cite bi2024heterogeneous%} -->
+Each agent in the supply chain (suppliers, manufacturers, transporters, etc.) is modeled with a belief-desire-intention (BDI) architecture. Agents possess knowledge of their own capabilities, production states, and surrounding network context. This model-based design enables flexible behavior adaptation in the face of disruption. cite {% cite bi2023distributed%} cite {% cite bi2022model%}  cite {% cite bi2024heterogeneous%}
 
 **Agent Interaction:**
 Agents interact through structured communication protocols inspired by the Contract Net Protocol. Communication involves iterative information exchange for supplier selection, flow reallocation, and demand propagation. This design supports local collaboration and global coordination without centralized control.
 
 **Agent Decision-Making:**
-Each agent independently identifies disruptions, updates its local state, and solves constrained optimization problems to fulfill new product demands. Decision-making processes include disruption detection, supplier selection, and response planning, and are guided by agent-level objectives such as cost minimization or capacity balancing.
-
-<!-- {% citeestrada2023multi%} {% citeestrada2025lead%} -->
+Each agent independently identifies disruptions, updates its local state, and solves constrained optimization problems to fulfill new product demands. Decision-making processes include disruption detection, supplier selection, and response planning, and are guided by agent-level objectives such as cost minimization or capacity balancing. cite{% cite estrada2023multi%} cite {% cite estrada2025lead%}
 
 **Experiment Design:**
 We conduct a comprehensive case study on a vehicle cockpit supply chain with 117 enterprise agents and 413 transport agents. 84 disruption scenarios are simulated, and the distributed approach is compared to a centralized optimization baseline. Performance is evaluated across multiple metrics including overage cost, network changes, communication effort, and feasibility under varying agent attributes (connectivity, complexity, redundancy, depth).

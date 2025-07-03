@@ -15,11 +15,7 @@ related_publications: true
 ## Dynamic Distributed Decision-Making for Resilient Resource Reallocation
 
 **Overview:**  
-This project develops a dynamic and distributed agent-based decision-making framework to support real-time resource reallocation in manufacturing systems facing unexpected disruptions. The system promotes local autonomy and cooperation while maintaining global efficiency and resilience. {% cite huang2024adasociety%}
-
-<!-- {% cite bi2021dynamic %}
-
-{% cite bi2024dynamic %} -->
+This project develops a dynamic and distributed agent-based decision-making framework to support real-time resource reallocation in manufacturing systems facing unexpected disruptions. The system promotes local autonomy and cooperation while maintaining global efficiency and resilience. cite {% cite huang2024adasociety%}  cite {% cite bi2021dynamic %} cite {% cite bi2024dynamic %}
 
 **Agent Modeling:**  
 Manufacturing units, such as workshops and machines, are modeled as autonomous agents equipped with knowledge of their functional capabilities, local production states, and inter-agent dependencies. Each agent incorporates a hybrid decision structure that includes both rule-based disruption identification and optimization-based decision execution.
@@ -41,10 +37,7 @@ This work demonstrates the potential of dynamic distributed intelligence in impr
 ## Automated Learning Control Architecture for Cyber-Physical Manufacturing Systems
 
 **Overview:**  
-This project explores a hierarchical control architecture that integrates machine learning with model-based control for next-generation cyber-physical manufacturing systems. The proposed framework enables intelligent automation that adapts to complex, dynamic, and uncertain environments, aiming to improve manufacturing system flexibility, robustness, and performance.
-
-
-<!-- {% cite kovalenko2022towards %} -->
+This project explores a hierarchical control architecture that integrates machine learning with model-based control for next-generation cyber-physical manufacturing systems. The proposed framework enables intelligent automation that adapts to complex, dynamic, and uncertain environments, aiming to improve manufacturing system flexibility, robustness, and performance. cite {% cite kovalenko2022towards %}
 
 **Key Contributions:**
 
@@ -61,11 +54,11 @@ This project explores a hierarchical control architecture that integrates machin
 The architecture is validated through several manufacturing use cases, such as machine tool path control, process reconfiguration, and dynamic task allocation. These cases demonstrate the architecture’s ability to integrate sensing, learning, and actuation in real-world production environments.
 
 **Impact:**  
-This work lays the foundation for scalable and adaptive control in smart factories. By combining machine learning, feedback control, and cyber-physical integration, it advances the vision of autonomous manufacturing systems capable of continual self-optimization and reconfiguration.
+This work lays the foundation for scalable and adaptive control in smart factories. By combining machine learning, feedback control, and cyber-physical integration, it advances the vision of autonomous manufacturing systems capable of continual self-optimization and reconfiguration. cite {% cite fu2025digital %}
 
 ---
 
-<!-- {% cite fu2025digital %} -->
+
 
 ## Gallery
 
