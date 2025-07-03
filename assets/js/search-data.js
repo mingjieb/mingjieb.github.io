@@ -132,11 +132,6 @@ ninja.data = [{
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{id: "projects-adasociety",
           title: 'AdaSociety',
           description: "A customizable multi-agent environment featuring expanding state and action spaces, alongside explicit and alterable social structures",
@@ -162,6 +157,11 @@ ninja.data = [{
           description: "An LLM-based agent simulation framework modeling prehistoric hunter-gatherer societies",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Morality/";
+            },},{id: "projects-underwater-dual-manipulators",
+          title: 'Underwater dual manipulators',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/MultiShip/";
             },},{id: "projects-robot-kinematics-and-dynamics",
           title: 'Robot Kinematics and Dynamics',
           description: "Computational foundations of autonomous robotics for programming modern mobile manipulation systems",
@@ -172,6 +172,11 @@ ninja.data = [{
           description: "Multidisciplinary laboratory course with exposures to sensing, reasoning, and acting for physically-embodied systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ROB550/";
+            },},{id: "projects-underwater-dual-manipulators",
+          title: 'Underwater dual manipulators',
+          description: "another project with an image 🎉",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/UVMS/";
             },},{
         id: 'social-email',
         title: 'email',
