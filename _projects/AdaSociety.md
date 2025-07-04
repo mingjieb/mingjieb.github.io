@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AdaSociety
-description: A customizable multi-agent environment featuring expanding state and action spaces, alongside explicit and alterable social structures
+description: (PKU) A customizable multi-agent environment featuring expanding state and action spaces, alongside explicit and alterable social structures
 img: assets/img/AdaSociety.gif
 importance: 1
 category: Social Simulation
@@ -11,6 +11,14 @@ related_publications: true
 Project: AdaSociety — Adaptive Multi-Agent Environment with Social Structures
 **Overview:**
 AdaSociety is a novel benchmark environment for evaluating multi-agent decision-making under dynamic social structures. It introduces a population of heterogeneous agents co-evolving in a procedurally generated city with needs, preferences, and resource constraints, enabling the study of complex social behaviors, institutional emergence, and adaptation.
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/AdaSociety.png" title="Example image" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  This image can also have a caption. It's like magic.
+</div>
 
 **Agent Modeling:**
 Agents are designed with diverse attributes, including consumption needs, labor abilities, and social identities. They possess internal states (e.g., health, inventory, utility) and interact within an environment that includes economic roles (e.g., consumer, worker, robber) and institutions (e.g., tax, punishment). This rich agent modeling supports the emergence of realistic macro-social dynamics from micro-level behaviors.
@@ -29,21 +37,19 @@ AdaSociety fills a critical gap in existing benchmarks by integrating agent hete
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Ada-games.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Ada-tree.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Ada-interaction.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">

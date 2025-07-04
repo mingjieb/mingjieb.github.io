@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Large Social Simulator
-description: Human behavior simulation in real-world digital environment
+description: (BIGAI) Human behavior simulation in real-world digital environment
 img: assets/img/LSS.gif
 importance: 1
 category: Social Simulation

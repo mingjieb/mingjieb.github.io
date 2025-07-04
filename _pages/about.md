@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: 
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: #>
     # <p>555 your office number</p>
@@ -30,11 +30,11 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 
-I am a research scientist at the Multi-agent Lab, Beijing Institute for General Artificial Intelligence ([BIGAI](https://www.bigai.ai/)), China. I obtained my Ph.D. in 2023 from the [Robotics Department](https://robotics.umich.edu/) at the University of Michigan, where I was advised by Professors [Kira Barton](https://robotics.umich.edu/people/faculty/kira-barton/) and [Dawn M. Tilbury](https://robotics.umich.edu/people/faculty/dawn-tilbury/).
+I am a research scientist at the Multi-agent Lab, Beijing Institute for General Artificial Intelligence ([BIGAI](https://www.bigai.ai/)), China. Before that, I worked in Hitachi America Ltd. as a smart manufacturing researcher. I obtained my Ph.D. in 2023 from the [Robotics Department](https://robotics.umich.edu/) at the University of Michigan, where I was advised by Professors [Kira Barton](https://robotics.umich.edu/people/faculty/kira-barton/) and [Dawn M. Tilbury](https://robotics.umich.edu/people/faculty/dawn-tilbury/).
 
 My research centers on distributed artificial intelligence, with a particular emphasis on multi-agent systems. I am interested in the following topics:
 
 - **Research Areas:** Agent modeling, multi-agent interaction and decision-making, agent-based simulation
-- **Methodologies:** Multi-agent reinforcement learning (MARL), large language model (LLM)-based agents, optimization techniques
+- **Methodologies:** Multi-agent reinforcement learning (MARL), large language model (LLM)-based agents, optimization-based decision-making
 - **Applications:** Social simulation, smart manufacturing and supply chains, industrial robotics
 
