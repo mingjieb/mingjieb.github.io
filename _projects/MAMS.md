@@ -31,7 +31,7 @@ Manufacturing units, such as workshops and machines, are modeled as autonomous a
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/IJPR.png" title="Example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/publication_preview/IJPR.png" title="Example image" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -58,7 +58,7 @@ A simulated job-shop manufacturing scenario is constructed, with agents represen
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/IJPR.gif" title="Example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/publication_preview/IJPR.gif" title="Example image" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -77,7 +77,7 @@ This project explores a hierarchical control architecture that integrates machin
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/IEEE-Access.png" title="Example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/publication_preview/IEEE-Access.png" title="Example image" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">

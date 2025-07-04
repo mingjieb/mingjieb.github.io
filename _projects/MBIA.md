@@ -38,7 +38,7 @@ Agents interact through structured communication protocols inspired by the Contr
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/TASE-MBIA.png" title="Example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/publication_preview/TASE-MBIA.png" title="Example image" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -50,7 +50,7 @@ Each agent independently identifies disruptions, updates its local state, and so
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/RAL.png" title="Example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/publication_preview/RAL.png" title="Example image" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -62,7 +62,7 @@ We conduct a comprehensive case study on a vehicle cockpit supply chain with 117
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/TASE-Juan.png" title="Example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/publication_preview/TASE-Juan.png" title="Example image" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">

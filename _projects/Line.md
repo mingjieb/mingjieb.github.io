@@ -2,7 +2,7 @@
 layout: page
 title: Manufacuring Line Reconfiguration
 description: (Hitachi)
-img: assets/img/TASE-hitachi.png
+img: assets/img/hitachi-line.png
 importance: 3
 category: Industrial Application
 related_publications: true

@@ -13,7 +13,7 @@ Project: AdaSociety — Adaptive Multi-Agent Environment with Social Structures
 AdaSociety is a novel benchmark environment for evaluating multi-agent decision-making under dynamic social structures. It introduces a population of heterogeneous agents co-evolving in a procedurally generated city with needs, preferences, and resource constraints, enabling the study of complex social behaviors, institutional emergence, and adaptation.
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/AdaSociety.png" title="Example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/publication_preview/AdaSociety.png" title="Example image" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
