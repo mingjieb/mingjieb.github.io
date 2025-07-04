@@ -134,22 +134,27 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-adasociety",
           title: 'AdaSociety',
-          description: "A customizable multi-agent environment featuring expanding state and action spaces, alongside explicit and alterable social structures",
+          description: "(PKU) A customizable multi-agent environment featuring expanding state and action spaces, alongside explicit and alterable social structures",
           section: "Projects",handler: () => {
               window.location.href = "/projects/AdaSociety/";
             },},{id: "projects-large-social-simulator",
           title: 'Large Social Simulator',
-          description: "Human behavior simulation in real-world digital environment",
+          description: "(BIGAI) Human behavior simulation in real-world digital environment",
           section: "Projects",handler: () => {
               window.location.href = "/projects/LSS/";
-            },},{id: "projects-mams",
-          title: 'MAMS',
-          description: "Software Defined Control for Smart Manufacturing Systems",
+            },},{id: "projects-manufacuring-line-reconfiguration",
+          title: 'Manufacuring Line Reconfiguration',
+          description: "(Hitachi)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Line/";
+            },},{id: "projects-multi-agent-manufacutring-systems",
+          title: 'Multi-Agent Manufacutring Systems',
+          description: "(NSF) Software Defined Control for Smart Manufacturing Systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/MAMS/";
-            },},{id: "projects-mbia",
-          title: 'MBIA',
-          description: "A Model-Based Intelligent Agent Approach for Supply Chain Transparency and Resilience",
+            },},{id: "projects-multi-agent-supply-chain-networks",
+          title: 'Multi-Agent Supply Chain Networks',
+          description: "(NSF) A Model-Based Intelligent Agent Approach for Supply Chain Transparency and Resilience",
           section: "Projects",handler: () => {
               window.location.href = "/projects/MBIA/";
             },},{id: "projects-morality",
@@ -172,8 +177,8 @@ ninja.data = [{
           description: "Multidisciplinary laboratory course with exposures to sensing, reasoning, and acting for physically-embodied systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ROB550/";
-            },},{id: "projects-underwater-dual-manipulators",
-          title: 'Underwater dual manipulators',
+            },},{id: "projects-underwater-vehicle-with-dual-manipulators",
+          title: 'Underwater Vehicle with Dual Manipulators',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/UVMS/";
