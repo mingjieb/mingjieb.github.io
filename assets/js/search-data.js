@@ -144,7 +144,7 @@ ninja.data = [{
               window.location.href = "/projects/LSS/";
             },},{id: "projects-manufacuring-line-reconfiguration",
           title: 'Manufacuring Line Reconfiguration',
-          description: "(Hitachi)",
+          description: "(Hitachi) A digital twin- and optimization-based dynamic line reconfiguration method",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Line/";
             },},{id: "projects-multi-agent-manufacutring-systems",
@@ -162,11 +162,6 @@ ninja.data = [{
           description: "An LLM-based agent simulation framework modeling prehistoric hunter-gatherer societies",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Morality/";
-            },},{id: "projects-underwater-dual-manipulators",
-          title: 'Underwater dual manipulators',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/MultiShip/";
             },},{id: "projects-robot-kinematics-and-dynamics",
           title: 'Robot Kinematics and Dynamics',
           description: "Computational foundations of autonomous robotics for programming modern mobile manipulation systems",
@@ -174,12 +169,12 @@ ninja.data = [{
               window.location.href = "/projects/ROB510/";
             },},{id: "projects-robotic-systems-laboratory",
           title: 'Robotic Systems Laboratory',
-          description: "Multidisciplinary laboratory course with exposures to sensing, reasoning, and acting for physically-embodied systems",
+          description: "(UofM Course) Multidisciplinary laboratory course with exposures to sensing, reasoning, and acting for physically-embodied systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ROB550/";
             },},{id: "projects-underwater-vehicle-with-dual-manipulators",
           title: 'Underwater Vehicle with Dual Manipulators',
-          description: "another project with an image 🎉",
+          description: "(HUST) Design and simulation analysis of an underwater vehicle with dual manipulators",
           section: "Projects",handler: () => {
               window.location.href = "/projects/UVMS/";
             },},{
