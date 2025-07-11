@@ -8,7 +8,7 @@ category: Robotics
 related_publications: true
 ---
 
-This project was my undergraduate thesis, supervised by Prof. Xianbo Xiang at the School of Naval Architecture and Ocean Engineering, Huazhong University of Science and Technology. Two papers were published in this project: {% cite bi2019underwater%}, {% cite xiang2019underwater%}
+This project was my undergraduate thesis, supervised by Prof. Xianbo Xiang at the School of Naval Architecture and Ocean Engineering, Huazhong University of Science and Technology. Two papers were published in this project: {% cite bi2019underwater xiang2019underwater%}
 
 ---
 ## Design, Hydrodynamics analysis and computation

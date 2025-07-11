@@ -7,29 +7,43 @@ importance: 3
 category: Industrial Application
 related_publications: true
 ---
+
+This project was collaborated with my previous collegues Dr. Bo Fu, supervised by Prof. Kira Barton and Prof. Dawn M. Tilbury, when I studied at the University of Michigan. It was funded by Hitachi America Ltd. One paper was published in this project: {% cite fu2025digital %}, which will be presented in CASE 2025.
+
+---
+
 ## Digital Twin-based Smart Manufacturing: Dynamic Line Reconfiguration for Disturbance Handling
+
 
 <div class="row align-items-center my-4">
   <div class="col-md-6">
-    <strong>Overview:</strong><br>
-    This project proposes a unified framework that enables automatic and dynamic reconfiguration of manufacturing lines in response to real-world disturbances, such as machine failures or operator delays. The approach tightly integrates digital twins, capability-based modeling, combinatorial optimization, and discrete-event simulation, offering a scalable and real-time solution for smart and resilient manufacturing. cite {% cite fu2025digital %}
-
-    <strong>Key features:</strong><br>
-    
-    - Digital Twin Integration: A real-time digital twin continuously monitors the production line’s operational state, detects disruptions, and triggers the reconfiguration pipeline.
-
-    - Capability-Based Modeling: Each machine and worker is modeled based on capabilities, allowing for flexible reassignment and routing under new configurations.
-
-    - Automated Optimization: When a disturbance is detected, an optimization module generates feasible reconfiguration plans that satisfy physical, temporal, and capability constraints.
-
-    - Fast Simulation Validation: Each candidate configuration is validated using a high-speed discrete-event simulator (~400x real-time) to ensure effectiveness before deployment.
-
-    - Full Automation: The entire pipeline—from disturbance detection to optimized configuration selection and deployment—is fully automated, requiring no manual intervention.
+    <strong style="font-size: 1.3em;">Overview:</strong>
+    <ul>
+    This project proposes a unified framework that enables automatic and dynamic reconfiguration of manufacturing lines in response to real-world disturbances, such as machine failures or operator delays. The approach tightly integrates digital twins, capability-based modeling, combinatorial optimization, and discrete-event simulation, offering a scalable and real-time solution for smart and resilient manufacturing.
+    </ul>
+    <strong style="font-size: 1.3em;">Key features:</strong>
+    <ul>
+    <li><strong>Digital Twin Integration:</strong>
+      A real-time digital twin continuously monitors the production line’s operational state, detects disruptions, and triggers the reconfiguration pipeline.
+    </li>
+    <li><strong>Capability-Based Modeling:</strong>
+      Each machine and worker is modeled based on capabilities, allowing for flexible reassignment and routing under new configurations.
+    </li>
+    <li><strong>Automated Optimization:</strong>
+      When a disturbance is detected, an optimization module generates feasible reconfiguration plans that satisfy physical, temporal, and capability constraints.
+    </li>
+    <li><strong>Fast Simulation Validation:</strong>
+      Each candidate configuration is validated using a high-speed discrete-event simulator (~400x real-time) to ensure effectiveness before deployment.
+    </li>
+    <li><strong>Full Automation:</strong>
+      The entire pipeline—from disturbance detection to optimized configuration selection and deployment—is fully automated, requiring no manual intervention.
+    </li>
+    </ul>
   </div>
   <div class="col-md-6 text-center">
     {% include figure.liquid loading="eager" path="assets/img/hitachi-arch.png" title="Example image" class="img-fluid rounded z-depth-1" zoomable=true%}
     <div class="caption">
-      This image can also have a caption. It's like magic.
+      An illustration of the system process digital twin and its connection with the real manufacturing line
     </div>
   </div>
 </div>
@@ -41,13 +55,13 @@ related_publications: true
   </div>
 </div>
 <div class="caption">
-  This image can also have a caption. It's like magic.
+  An example manufacturing line operating under a disturbance due to a slower worker
 </div>
 
 
 
 ### Experimental Validation
-The framework is demonstrated on a real-world battery production line with multiple concurrent disturbances. Extensive experiments validate the performance, scalability, and responsiveness of the system, highlighting its practical value in industrial settings.
+To demonstrate the efficacy of the framework, a battery manufacturing line-based case study with 51 operations and 8 agent types has been conducted. The framework initializes a line configuration to achieve the optimal bottleneck time of 43.9 s using 20 agents. Then, we introduce two disturbances to the manufacturing line. Under the smaller disturbance, the reconfiguration framework is able to maintain the 43.9 s bottleneck time by redistributing operations from the disturbed agent to an adjacent agent with similar capabilities. Under larger disturbances, the framework chooses to add one more agent to the manufacturing line in addition to redistributing the operations to neighboring agents. Using these two strategies, the framework is able to determine a reconfiguration plan that maintains the original bottleneck time and throughput value. Compared to the use of the original line configuration plan under these two disturbances, the implementation of a reconfiguration plan prevents the 26% and 63% drops in the throughput, respectively. In addition, the framework has been shown to be computationally efficient. The configuration optimization and reconfiguration take 0.8 s and 0.03 s on average to find an optimal solution. The simulation runs at around 400x real-time speed.
 
 ### Impact
 This work bridges the gap between digital twin technologies and operational decision-making in manufacturing. It provides a robust foundation for adaptive, automated, and resilient production systems in the era of Industry 4.0.
@@ -57,5 +71,5 @@ This work bridges the gap between digital twin technologies and operational deci
   </div>
 </div>
 <div class="caption">
-  This image can also have a caption. It's like magic.
+  A battery manufacturing line
 </div>
