@@ -23,12 +23,17 @@ This project was collaborated with my previoud collegues Prof. Ilya Kovalenko, s
   </div>
   <div class="col-md-6">
     <span style="font-size: 1.5em;">Overview</span><br>
-    This project develops a dynamic and distributed agent-based decision-making framework to support real-time resource reallocation in manufacturing systems facing unexpected disruptions. The system promotes local autonomy and cooperation while maintaining global efficiency and resilience.
+    This project develops a dynamic, distributed, and resilient decision-making framework for manufacturing systems facing disruptions such as machine failures or unplanned downtime. The core innovation lies in modeling production resources as autonomous agents capable of local reasoning, communication, and task negotiation. By embedding agents with decision model that relies solely on local information and neighbor interactions, the system avoids reliance on a central controller and ensures robustness against partial failures. We propose a distributed protocol—information exchange and cooperative reallocation—validated through extensive simulations across various network topologies and disruption scales. The results demonstrate superior performance in maintaining production continuity and system efficiency, compared to static or centralized alternatives.
   </div>
 </div>
 
 #### Agent Modeling
-Manufacturing units, such as workshops and machines, are modeled as autonomous agents equipped with knowledge of their functional capabilities, local production states, and inter-agent dependencies. Each agent incorporates a hybrid decision structure that includes both rule-based disruption identification and optimization-based decision execution.
+The paper models agents as autonomous production units by leveraging the following theoretical foundations:
+
+- **Belief-Desire-Intention (BDI)**: Following Theory of Mind (ToM), the agent architecture applying BDI design to model agent knowledge base, storing and tracking agent local information, such as production schedule, current state, capabilities, environment, etc.
+- **Finite State Machines (FSMs)**: Agents' states and capabilities are modeled as automata with well-defined operational states (idle, processing, disrupted, etc.) and operational capabilities (move part, drilling a hole, etc.), enabling structured transitions and modular analysis of behavior under dynamic conditions.
+- **Category Theory**: Various sets and mapping functions are used to define agents' knowledge of their environments, including production schedule neighbors, same-capabilities machines, collaboration-possible agents, etc.
+- **Mix Integer Programming (MIP)**: The decision process of agents is modeled as an MIP optimization problem, similar to common scheduling and planning problem in operations research. 
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 text-center">
@@ -42,7 +47,18 @@ Manufacturing units, such as workshops and machines, are modeled as autonomous a
 <div class="row align-items-center my-4">
   <div class="col-md-6">
     <span style="font-size: 1.5em;">Agent Interaction</span><br>
-    Agents collaborate through a multi-phase communication protocol designed to resolve resource reallocation dynamically. This includes broadcast-based disruption detection, negotiation-based reallocation coordination, and feedback-driven adjustment cycles. The interaction design emphasizes local transparency and efficient conflict resolution.
+    Agent interactions are governed by lightweight, negotiation-based distributed protocols, drawing on several key methodologies:
+    <ul>
+      <li><strong>Contract Net Protocol (CNP):</strong>
+      The task redistribution mechanism mimics the CNP model: agents suffered from disruption sends requests to other agents based on its capability-based environment model. These agents determines request response, including help or propagation needed. All communication only allows local information to share.
+      </li>
+      <li><strong>Graph-Based Communication Topology:</strong>
+      Agents communicate with neighbors in a static or dynamic network topology (e.g., line, ring, grid), aligning with concepts in multi-agent system (MAS) graph theory, which influences convergence and propagation speed.
+      </li>
+      <li><strong>Consensus-Based Local Protocols:</strong>
+      The two-stage interaction (information sharing → task negotiation) is designed to reach local consensus, borrowing from distributed consensus models used in fault-tolerant computing and decentralized control.
+      </li>
+    </ul>
   </div>
   <div class="col-md-6 text-center">
     {% include figure.liquid loading="eager" path="assets/img/MAMS-com.png" title="Example image" class="img-fluid rounded z-depth-1" zoomable=true%}
@@ -53,10 +69,18 @@ Manufacturing units, such as workshops and machines, are modeled as autonomous a
 </div>
 
 #### Agent Decision-Making
-Upon detecting a disruption, affected agents initiate a decentralized coordination process that includes evaluating feasible resource transfer plans, selecting optimal production partners, and dynamically adjusting production tasks. Decision-making integrates real-time information, cost models, and workload balancing, enabling agents to adapt under time constraints.
+The decision-making logic is grounded in distributed optimization and resilience engineering, supported by:
+- **MIP Optimization**: The system avoids solving full MIP centrally but mirrors it by decomposing the task allocation problem into local subproblems. Each agent performs a simplified binary decision process, approximating a distributed MIP approach.
+- **Risk Assessment**: Agents handle disruptions (e.g., machine failures) reactively, while they also consider probabilistic risk modeling into their optimization-based decision-making model, realizing reallocation to mitigate operational risks locally.
+- **Local Decision-Making**: All decisions are made using only local and neighbor information. Agents trigger decisions based on events like load imbalance or failure, ensuring fast, scalable, and communication-efficient coordination.
+
 
 #### Experiment Design
-A simulated job-shop manufacturing scenario is constructed, with agents representing different types of production resources. The framework is evaluated under various disruption cases (e.g., machine failures, transport breakdowns), and compared to centralized and semi-centralized baselines. Metrics include reallocation feasibility, decision latency, task completion rate, and overall system resilience.
+We use a Repast Symphony (RepastS) platform to model a multi-agent system and simulate the behavior of the agents due to its flexibility and scalability properties. The simulated manufacturing system represents a modified version of the Intel Mini-Fab, a semiconductor manufacturing facility. The simulated system contains two infinite-sized buffers, Entry and Exit, and 20 machines that are connected via a network of 6 mobile robots.
+
+In this simulated manufacturing system, 50 L-products and 50 S-products are fed alternatively into the system with a pre-generated initial production schedule. Products enter the facility every 30 ticks starting at tick 10. Uncertainty in machine operation time and the probability of machine breakdown are added to all machines in the simulated system. The system starts operations with the probability of machine breakdown ranging from 3.3% to 10%. If a machine undergoes a breakdown, a rescheduling process will be triggered. 
+
+The centralized method re-optimizes the whole system to generate a new schedule with a shorter cycle time than the distributed method. However, the centralized method requires more communication and larger computational efforts to reschedule the system. In practice, more communication potentially leads to a larger information delay, thus the centralized method lacks the ability to respond to disruptions dynamically and quickly. Furthermore, the computational efforts of the centralized method increase as the size and complexity of the set-up increase in scale. In this case, the distributed method can provide advantages by using local communication to reduce the communication and computation time
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0 text-center">
@@ -68,7 +92,7 @@ A simulated job-shop manufacturing scenario is constructed, with agents represen
 </div>
 
 #### Impact 
-This work demonstrates the potential of dynamic distributed intelligence in improving the robustness and responsiveness of smart manufacturing systems. It provides a scalable blueprint for handling disruptions through autonomous agents and offers practical implications for industrial resilience strategies.
+The proposed framework significantly advances the resilience and autonomy of smart manufacturing systems under the Industry 4.0 paradigm. Its agent-based, distributed architecture offers a scalable and fault-tolerant alternative to traditional centralized control, which is often vulnerable to single points of failure and communication bottlenecks. By integrating lightweight, negotiation-based protocols inspired by contract net theory and distributed optimization, the system achieves both local responsiveness and global coordination. The ability to dynamically reallocate tasks in real-time makes this approach particularly valuable for high-mix, low-volume production environments and cyber-physical manufacturing platforms. Furthermore, the generality of the framework suggests broad applicability to other domains, such as logistics, cloud robotics, and distributed computing.
 
 ---
 

@@ -26,10 +26,28 @@ AdaSociety is a novel benchmark environment for evaluating multi-agent decision-
 </div>
 
 #### Agent Modeling
-Agents are designed with diverse attributes, including consumption needs, labor abilities, and social identities. They possess internal states (e.g., health, inventory, utility) and interact within an environment that includes economic roles (e.g., consumer, worker, robber) and institutions (e.g., tax, punishment). This rich agent modeling supports the emergence of realistic macro-social dynamics from micro-level behaviors.
+AdaSociety introduces heterogeneous agents with the following features:
+- **Inventory and Capacity**: Each agent has an inventory with varying capacity for different resources, encoding skills and limitations (e.g., some cannot carry specific tools or perform synthesis tasks).
+- **Preferences**: Agents have individualized preferences for resources, modeled by a reward function $R_i(\rho) = m_i^{\rho} · h_i(\rho) · r^{\rho}$, where the subjective reward depends on the agent’s inventory, preference weights, and objective resource value.
+- **Partial Observability**: Each agent operates with limited visibility in a local grid window and only observes its own inventory and the full social network graph.
+- **Social Cognition Potential**: Agents can perceive and manipulate social states (e.g., their own position in a multilayer social graph), enabling higher-level reasoning such as group formation and hierarchy emergence.
 
 #### Agent Interaction
-Agents interact through structured mechanisms such as resource trading, labor matching, and public goods contribution. Social interactions also include cooperative and adversarial dynamics, including robbery and group-based identity formation. These interactions are affected by evolving institutions and group affiliations, allowing the simulation of adaptive social structures.
+Agent interaction occurs across two parallel domains: physical and social.
+
+**Physical Interaction**
+- **Actions**: Move, pick/drop resources, synthesize new items on event grids, and communicate.
+- **Environment**: A 2D symbolic grid with both natural and synthesized resources, whose visibility and accessibility depend on the agent’s state.
+
+**Social Interaction**
+- **Dynamic Social Graph**: Agents are part of an evolving multilayer directed graph (nodes = agents/organizations; edges = social links like reward/information sharing)
+- **Social Actions**: Connect, disconnect, or negotiate with others (e.g., forming contracts or coalitions).
+- **Connection Semantics**: Links encode social mechanisms like reward sharing, labor division, and information access. These can be predefined or emergent through agent negotiation.
+
+- **Mini-game Scenarios**:
+  - **Social Structure**: Agents adapt to externally changing group configurations.
+  - **Contract**: Agents form groups under fixed semantics before acting.
+  - **Negotiation**: Agents bargain over reward splits and form dynamic coalitions.
 
 <style>
 .same-height-imgs img,
@@ -59,10 +77,27 @@ Agents interact through structured mechanisms such as resource trading, labor ma
 </div>
 
 #### Agent Decision-Making
-Each agent operates based on local observations, balancing individual needs with social strategies. Decision-making spans basic survival (e.g., acquiring food) to complex political or institutional behaviors (e.g., voting, rule enforcement). Reinforcement learning is used to train policies that adapt to changing social and economic conditions.
+AdaSociety formalizes decision-making through the Growing-MG (Markov Game) framework:
+
+- **Non-Stationarity**: Both the environment (states/actions) and transition/reward functions evolve over time, triggered by agent behaviors.
+
+- **Social-State-Dependent Policies**: The agent must account for both physical exploration and social state evolution to maximize long-term gains.
+
+- **Multiple Objectives**: Agents aim to optimize:
+  - Individual reward.
+  - Group fairness (via Gini index).
+  - Event completion rates (depth of synthesis tree explored).
+  - Effective social positioning (measured by graph degree metrics).
+
+- **Algorithm Compatibility**: We use several deep reinforcement learning algorithms as baselines, including PPO, RecurrentPPO, Rainbow, and MAPPO. We employ a CNN for encoding grid information and a GCN for encoding social state in all RL methods. The open-source library RLLib is used for RL training.
+Additionally, we design a curriculum learning (CL) algorithm. It starts with shared rewards to enhance cooperation strategies, then gradually increases social state randomness for learning under different social structures, and finally allows agents to perform social actions to establish their own social state. RecPPO is used for RL training at each stage. 
+We also present a LLM + rule-based controller (LLM-C) framework based on GPT-4 [1], which converts environmental information into prompts to query an LLM for high-level plans and then calls a rule-based controller to execute actions based on the generated plan. LLM has been shown to be effective in some singleagent environments, such as MineCraft.
 
 #### Experiment Design
-The environment supports a wide range of experiments across over 30 tasks, including institutional evaluation, inter-group conflict, and long-term planning. Comprehensive metrics are introduced to assess social inequality, resource allocation efficiency, cooperation, and emergent group dynamics. The framework allows benchmarking multi-agent RL algorithms in adaptive and socially grounded settings.
+To provide a comprehensive benchmark and illustrate the characteristics of *AdaSociety*, we propose a set of mini-games. The three mini-games are arranged in ascending order of the complexity of decision-making. *Social structure*, prescribing agents’ partners and connection semantics, evaluates agents’ ability to adapt to the changeable social structure. *Contract* predefines connection semantics, where agents need to select partners while learning coordination with various co-players. In *Negotiation*, agents independently select partners, determine the reward distribution plan with their partners, and behave under the negotiated relationship. All of the three mini-games share the same physical component, which contains a part of the synthesis tree. To show the full complexity of our physical components, another mini-game *Exploration*, which contains all built-in resources and events, is conducted as well.
+
+Through the test of several RL and LLM-based algorithms in mini-games, the preliminary results
+indicate that AdaSociety maintains a rational complexity level for current decision-making methods.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
@@ -74,7 +109,7 @@ The environment supports a wide range of experiments across over 30 tasks, inclu
 </div>
 
 #### Impact
-AdaSociety fills a critical gap in existing benchmarks by integrating agent heterogeneity, institutional dynamics, and long-horizon adaptation. It serves as a testbed for advancing socially aware AI, multi-agent reinforcement learning, and computational social science.
+AdaSociety fills a critical gap in existing benchmarks by integrating agent heterogeneity, social structure dynamics, and long-horizon adaptation. It serves as a testbed for advancing socially aware AI, multi-agent reinforcement learning, LLM agents, and computational social science.
 
 
 

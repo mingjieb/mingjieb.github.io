@@ -19,15 +19,15 @@ This project was collaborated with my previous collegues Dr. Bo Fu, supervised b
   <div class="col-md-6">
     <strong style="font-size: 1.3em;">Overview:</strong>
     <ul>
-    This project proposes a unified framework that enables automatic and dynamic reconfiguration of manufacturing lines in response to real-world disturbances, such as machine failures or operator delays. The approach tightly integrates digital twins, capability-based modeling, combinatorial optimization, and discrete-event simulation, offering a scalable and real-time solution for smart and resilient manufacturing.
+    This project proposes a unified framework that enables automatic and dynamic reconfiguration of manufacturing lines in response to real-world disturbances, such as machine failures or operator delays. The approach tightly integrates digital twins, ontology-based capability modeling, combinatorial optimization, and discrete-event simulation, offering a scalable and real-time solution for smart and resilient manufacturing.
     </ul>
     <strong style="font-size: 1.3em;">Key features:</strong>
     <ul>
     <li><strong>Digital Twin Integration:</strong>
       A real-time digital twin continuously monitors the production line’s operational state, detects disruptions, and triggers the reconfiguration pipeline.
     </li>
-    <li><strong>Capability-Based Modeling:</strong>
-      Each machine and worker is modeled based on capabilities, allowing for flexible reassignment and routing under new configurations.
+    <li><strong>Ontology-based capability modeling:</strong>
+      Each machine and worker is modeled based on capabilities using ontology models, allowing for flexible reassignment and routing under new configurations.
     </li>
     <li><strong>Automated Optimization:</strong>
       When a disturbance is detected, an optimization module generates feasible reconfiguration plans that satisfy physical, temporal, and capability constraints.
