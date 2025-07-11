@@ -8,7 +8,7 @@ category: Industrial Application
 related_publications: true
 ---
 
-This project was collaborated with my previoud collegues Prof. Ilya Kovalenko, supervised by Prof. Kira Barton and Prof. Dawn M. Tilbury, when I studied at the University of Michigan. It was founded by NSF. Three papers were published in this project: {% cite bi2021dynamic bi2024dynamic kovalenko2022towards %}.
+This project was collaborated with my previoud collegues Prof. [Ilya Kovalenko](https://www.me.psu.edu/department/directory-detail-g.aspx?q=iqk5135), supervised by Prof. [Kira Barton](https://robotics.umich.edu/people/faculty/kira-barton/) and Prof. [Dawn M. Tilbury](https://robotics.umich.edu/people/faculty/dawn-tilbury/), when I studied at the University of Michigan. It was founded by NSF. Three papers were published in this project: {% cite bi2021dynamic bi2024dynamic kovalenko2022towards %}.
 
 ---
 

@@ -8,7 +8,7 @@ category: Industrial Application
 related_publications: true
 ---
 
-This project was collaborated with my previous collegues Dr. Bo Fu, supervised by Prof. Kira Barton and Prof. Dawn M. Tilbury, when I studied at the University of Michigan. It was funded by Hitachi America Ltd. One paper was published in this project: {% cite fu2025digital %}, which will be presented in CASE 2025.
+This project was collaborated with my previous collegues Dr. [Bo Fu](https://www.bofu.page/), supervised by Prof. Kira Barton and Prof. Dawn M. Tilbury, when I studied at the University of Michigan. It was funded by Hitachi America Ltd. One paper was published in this project: {% cite fu2025digital %}, which will be presented in CASE 2025.
 
 ---
 
