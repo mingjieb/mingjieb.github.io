@@ -38,3 +38,4 @@ My research centers on distributed artificial intelligence, with a particular em
 - **Methodologies:** Multi-agent reinforcement learning (MARL), large language model (LLM)-based agents, optimization-based decision-making
 - **Applications:** Social simulation, smart manufacturing and supply chains, industrial robotics
 
+I am currently looking for prospective Ph.D. students through the [TongProgam (通计划)](https://www.bigai.ai/tongprogram-2024/) — a joint doctoral training initiative between BIGAI and leading universities in China. Current partner universities include Zhejiang University, Beihang University, and Wuhan University. Feel free to reach out to me if you are interested!
