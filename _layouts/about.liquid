@@ -70,5 +70,35 @@ layout: default
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
+
+    <div id="total-views" aria-live="polite">Loading...</div>
+    <script>
+      const NAMESPACE = 'mingjieb.github.io';
+      const KEY       = 'site-total-views';
+      // ====================
+
+      const el = document.getElementById('total-views');
+      const endpoint = `https://api.countapi.xyz/hit/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(KEY)}`;
+
+      function withTimeout(promise, ms) {
+        let t;
+        return Promise.race([
+          promise,
+          new Promise((_, reject) => t = setTimeout(() => reject(new Error('timeout')), ms))
+        ]).finally(() => clearTimeout(t));
+      }
+
+      withTimeout(fetch(endpoint), 5000)
+        .then(res => {
+          if (!res.ok) throw new Error('network');
+          return res.json();
+        })
+        .then(data => {
+          el.textContent = `Total views: ${Number(data.value).toLocaleString()}`;
+        })
+        .catch(() => {
+          el.textContent = 'Total views: N/A';
+        });
+    </script>
   </article>
 </div>
