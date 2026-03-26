@@ -127,6 +127,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-entitled-digital-twin-based-smart-manufacturing-dynamic-line-reconfiguration-for-disturbance-handling-was-accepted-by-ieee-transactions-on-automation-science-and-engineering-t-ase",
           title: 'Our paper entitled Digital Twin-based Smart Manufacturing: Dynamic Line Reconfiguration for Disturbance Handling...',
           description: "",
+          section: "News",},{id: "news-our-workshop-paper-entitled-investigating-moral-evolution-via-llm-based-agent-simulation-was-accepted-by-colm-2025-workshop-on-social-sim",
+          title: 'Our workshop paper entitled Investigating Moral Evolution Via LLM-Based Agent Simulation was accepted...',
+          description: "",
           section: "News",},{id: "news-our-workshop-paper-entitled-cascade-cascaded-scoped-communication-for-multi-agent-re-planning-in-disrupted-industrial-environments-was-accepted-by-iclr-2026-workshop-on-ai-for-mechanism-design-and-strategic-decision-making",
           title: 'Our workshop paper entitled CASCADE: Cascaded Scoped Communication for Multi-Agent Re-planning in Disrupted...',
           description: "",
@@ -138,6 +141,11 @@ ninja.data = [{
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-aitown",
+          title: 'AItown',
+          description: "(BIGAI) 3D open world narrative-first virtual town where autonomous characters collaboratively enact open-ended storylines,",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/AItown/";
             },},{id: "projects-adasociety",
           title: 'AdaSociety',
           description: "(PKU) A customizable multi-agent environment featuring expanding state and action spaces, alongside explicit and alterable social structures",
