@@ -136,6 +136,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-workshop-paper-entitled-learning-to-be-fair-modeling-fairness-dynamics-by-simulating-moral-based-multi-agent-resource-allocation-was-accepted-by-iclr-2026-workshop-on-algorithmic-fairness-across-alignment-procedures-and-agentic-systems",
           title: 'Our workshop paper entitled Learning to Be Fair: Modeling Fairness Dynamics by Simulating...',
           description: "",
+          section: "News",},{id: "news-our-paper-entitled-why-are-we-moral-an-llm-based-agent-simulation-approach-to-the-study-of-moral-evolution-was-accepted-by-acl-2026-main-conference-oral",
+          title: 'Our paper entitled Why Are We Moral? An LLM-based Agent Simulation Approach to...',
+          description: "",
           section: "News",},{id: "projects-project-3-with-very-long-name",
           title: 'project 3 with very long name',
           description: "a project that redirects to another website",
@@ -173,7 +176,7 @@ ninja.data = [{
               window.location.href = "/projects/MBIA/";
             },},{id: "projects-morality",
           title: 'Morality',
-          description: "An LLM-based agent simulation framework modeling prehistoric hunter-gatherer societies",
+          description: "(UCLA, BIGAI) An LLM-based agent simulation framework modeling the evolution of morality in prehistoric hunter-gatherer societies",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Morality/";
             },},{id: "projects-robot-kinematics-and-dynamics",
